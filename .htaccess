@@ -2,9 +2,9 @@
 #Header set Cache-Control "max-age=0, private, no-cache, no-store, must-revalidate"
 
 # 1 ---- Establish a custom 404 File not Found page ----
-ErrorDocument 403 /file_not_found.php
-ErrorDocument 404 /file_not_found.php
+#ErrorDocument 403 /file_not_found.php
+#ErrorDocument 404 /file_not_found.php
 
 # 2 ---- Prevent directory file listing in all of your folders ----
 #IndexIgnore *
-Options -Indexes
+#Options -Indexes
