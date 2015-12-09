@@ -181,7 +181,7 @@ function signup(){
                     signupstatus.style.display = "block";
                     signupstatus.innerHTML = ajax.responseText;
                 } else {
-                    window.location.replace("http://shivaal-macbook.local/message.php?msg=verify_account&fn="+fn+"&e="+e);
+                    window.location.replace("message.php?msg=verify_account&fn="+fn+"&e="+e);
                 }
             }
         }

@@ -1,5 +1,5 @@
 <?php
-$url = "/";
-$mobile_url = "/mobile";
+$url = "http://onecard.herokuapp.com/";
+$mobile_url = "http://onecard.herokuapp.com//mobile";
 $hosuff = "@onecard.heroku.com";
 ?>
