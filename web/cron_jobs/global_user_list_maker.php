@@ -30,8 +30,8 @@ for ($id = 1; $id <= $max_id; $id++) {
         }
         $listelement = "
 <li class='live_result_list_itm'>
-    <a class='user_search_summary' href='".$url."?id=".$id."'>
-        <img src='$url$avatarsrc' class='user_search_avatar'>
+    <a class='user_search_summary' href='/?id=".$id."'>
+        <img src='$avatarsrc' class='user_search_avatar'>
         <div class='user_search_info'>
             <div class='user_search_name'>".$fn." ".$ln."</div>
             <div class='user_search_location'>".$location."</div>
@@ -42,7 +42,7 @@ for ($id = 1; $id <= $max_id; $id++) {
         $user->addChild('firstname', $fn);
         $user->addChild('lastname', $ln);
         $user->addChild('location', $location);
-        $user->addChild('url', $url."?id=".$id);
+        $user->addChild('url', "/?id=".$id);
         $user->addChild('avatarsrc', $avatarsrc);
         $user->addChild('listelement', $listelement);
     }
