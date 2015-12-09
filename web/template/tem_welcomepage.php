@@ -8,6 +8,7 @@
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/style/style.css">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
         <script src="/js/main.js"></script>
         <script src="/js/ajax.js"></script>
         <script src="/js/signup.js"></script>
@@ -26,7 +27,6 @@
                 </div>
                 <div id="register" class="register">
                     <h2 class="welcomeTitle" id="welcomeTitle">Sign Up</h2>
-                    <h3 class="welcomeDescr" id="welcomeDescr">It's free.</h3>
                     <?php include_once("tem_signupform.php"); ?>
                 </div>
             </div>

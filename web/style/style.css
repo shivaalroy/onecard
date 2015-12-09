@@ -6,7 +6,7 @@ body {
     min-width: 1000px;
 }
 body, button, input, label, select, td, textarea {
-    font-family: Myriad, sans-serif;
+    font-family: "Open Sans";
 }
 label, button, input[type="button"], input[type="submit"] {
     cursor: pointer;
@@ -43,11 +43,11 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 .loggedout_menubar #home_link {
     display: inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-.loggedout_menubar #home_link img {
-    height: 50px;
+    margin-top: 5px;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 48px;
+    text-decoration: none;
 }
 .loggedout_menubar_left {
     float: left;
@@ -595,14 +595,8 @@ input:focus, select:focus, textarea:focus, button:focus {
 
 /* WELCOME PAGE, index.php */
 .flat_ui_bg {
-    background-image: url(../img/tokyo.jpg);
-/*    background-image: url(../img/nyc.jpg);*/
     background-repeat: no-repeat;
-/*    background-size: cover;*/
-    background-size: 1280px 840px;
-/*    background-position: bottom;*/
-    background-position: 0 -220px;
-    color: rgba(255, 255, 255, 0.9);
+    color: #333;
 }
 .flat_ui_bg .welcomeInfo {
     float: left;
@@ -613,7 +607,7 @@ input:focus, select:focus, textarea:focus, button:focus {
 .flat_ui_bg .head_info {
     position: relative;
     top: 10px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 30px;
     /*color: #222;*/
     line-height: 100%;
@@ -630,11 +624,11 @@ input:focus, select:focus, textarea:focus, button:focus {
 .flat_ui_bg .info_point {
     margin: 0 0 15px;
     font-size: 24px;
-    color: rgba(255, 255, 255, 0.9);
+    /*color: rgba(255, 255, 255, 0.9);*/
 }
 .flat_ui_bg .info_point strong {
     font-size: 26px;
-    color: rgba(255, 255, 255, 0.9);
+    /*color: rgba(255, 255, 255, 0.9);*/
     margin-right: 4px;
     display: block;
 }
