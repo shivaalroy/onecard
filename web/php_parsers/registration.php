@@ -66,33 +66,44 @@ if(isset($_POST["fn"])){
         }
         */
         // Email the user their activation link
-        $to = "$e";
+        require '../../vendor/autoload.php';
+        $username = getenv('SENDGRID_USERNAME');
+        $password = getenv('SENDGRID_PASSWORD');
+        $sendgrid = new SendGrid($username, $password);
+
+        $to = $e;
         $from = "no-reply".$hosuff;
         $subject = 'OneCard Account Activation';
-        $message = '<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>OneCard Message</title>
-        <link rel="stylesheet" href="'.$url.'style/style.css">
-    </head>
+        $text = '<!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="UTF-8">
+                <title>OneCard Message</title>
+                <link rel="stylesheet" href="'.$url.'style/style.css">
+            </head>
 
-    <body>
-        <div style="padding:10px; background:#09a360; font-size:24px; color:#fff;">
-            <a href="'.$url.'">
-                <img src="'.$url.'img/logo.png" height="30" alt="Social Network" style="border:none; float:left; padding-right: 20px;">
-            </a>
-            Account Activation
-        </div>
-        <div style="padding:24px; padding-left:100px; font-size:17px;">Hello '.$fn.',<br /><br />Click the link below to activate your account when ready:<br /><br /><a href="'.$url.'activation.php?id='.$uid.'&e='.$e.'&p='.$p_hash.'">Click here to activate your account now</a><br /><br />Login after successful activation using your:<br />* E-mail Address: <b>'.$e.'</b>
-        </div>
-    </body>
-</html>';
-        $headers = "From: $from\n";
-        $headers .= "MIME-Version: 1.0\n";
-        $headers .= "Content-type: text/html; charset=iso-8859-1\n";
-        mail($to, $subject, $message, $headers);
-        echo "signup_success";
+            <body>
+                <div style="padding:10px; background:#09a360; font-size:24px; color:#fff;">
+                    <a href="'.$url.'" style="border:none; float:left; padding-right: 20px; color:#fff; text-decoration:none;">
+                        OneCard
+                    </a>
+                    Account Activation
+                </div>
+                <div style="padding:24px; padding-left:100px; font-size:17px;">Hello '.$fn.',<br /><br />Click the link below to activate your account when ready:<br /><br /><a href="'.$url.'activation.php?id='.$uid.'&e='.$e.'&p='.$p_hash.'">Click here to activate your account now</a><br /><br />Login after successful activation using your:<br />* E-mail Address: <b>'.$e.'</b>
+                </div>
+            </body>
+        </html>';
+        $message = new SendGrid\Email();
+        $message->addTo($to)->
+                  setFrom($from)->
+                  setSubject($subject)->
+                  setHtml($text);
+        $response = $sendgrid->send($message);
+        if ($response) {
+            echo "signup_success";
+        } else {
+            echo "signup_failure";
+        }
         exit();
     }
     exit();
