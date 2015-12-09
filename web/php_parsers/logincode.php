@@ -14,11 +14,11 @@ if(isset($_POST["email"])){
     // FORM DATA ERROR HANDLING
     if($e == "" || $p == ""){
         if ($d == 'desktop') {
-            header("location:".$url."login.php?login_attempt=1");
+            header("location:/login.php?login_attempt=1");
         } else if ($d == 'mobile') {
-            header("location:".$mobile_url."login.php?login_attempt=1");
+            header("location:/mobile/login.php?login_attempt=1");
         } else {
-            header("location:".$url."login.php?login_attempt=1");
+            header("location:/login.php?login_attempt=1");
         }
         exit();
     } else {
@@ -30,11 +30,11 @@ if(isset($_POST["email"])){
         $db_pass_str = $row[1];
         if($p != $db_pass_str){
             if ($d == 'desktop') {
-                header("location:".$url."login.php?login_attempt=1");
+                header("location:/login.php?login_attempt=1");
             } else if ($d == 'mobile') {
-                header("location:".$mobile_url."login.php?login_attempt=1");
+                header("location:/mobile/login.php?login_attempt=1");
             } else {
-                header("location:".$url."login.php?login_attempt=1");
+                header("location:/login.php?login_attempt=1");
             }
             exit();
         } else {
@@ -52,11 +52,11 @@ if(isset($_POST["email"])){
             $sql = "UPDATE table_users SET ip='$ip', lastlogin=now() WHERE id='$db_id' LIMIT 1";
             $query = mysqli_query($db_conx, $sql);
             if ($d == 'desktop') {
-                header("location:".$url);
+                header("location:/");
             } else if ($d == 'mobile') {
-                header("location:".$mobile_url);
+                header("location:/mobile/");
             } else {
-                header("location:".$url);
+                header("location:/");
             }
             exit();
         }

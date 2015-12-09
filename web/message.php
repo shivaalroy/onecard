@@ -17,7 +17,7 @@ if($msg == "activation_failure"){
     $message_content = 'Sorry there seems to have been an issue activating your account at this time. We have already notified ourselves of this issue and we will contact you via email when we have identified the issue.';
 } else if($msg == "activation_success"){
     $message_head = 'Activation Success';
-    $message_content = 'Your account is now activated. <a href="'.$url.'login.php">Click here to log in</a>';
+    $message_content = 'Your account is now activated. <a href="login.php">Click here to log in</a>';
 } else if($msg == "verify_account"){
     $firstname = preg_replace('#[^a-z]#i', '', $_GET['fn']);
     $email = mysqli_real_escape_string($db_conx, $_GET['e']);
@@ -35,6 +35,7 @@ if($msg == "activation_failure"){
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/style/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600">
         <script src="/js/main.js"></script>
     </head>
     <body>

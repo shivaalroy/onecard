@@ -34,7 +34,7 @@ if ($log_avatar == null){
 <div id="loggedin_menubar_container" class="loggedin_menubar_container">
     <div id="loggedin_menubar" class="loggedin_menubar">
         <div id="loggedin_menubar_left" class="loggedin_menubar_left">
-            <a href="/ class="home_link">
+            <a href="/" class="home_link">
                 <img class="home_img" src="/img/logo_loggedin.png" alt="logo" title="OneCard">
             </a>
             <form name="menubar_search" id="menubar_search" class="menubar_search" onsubmit="return false;">
@@ -54,16 +54,16 @@ if ($log_avatar == null){
 
             <ul class="navigation_list">
                 <li class="menu_item">
-                    <a id="log_firstname" class="menubar_container menubar_link" href="img/myinfo.php">
-                        <img class='my_photo' src='<?php echo $url.$log_avatarsrc; ?>'>
+                    <a id="log_firstname" class="menubar_container menubar_link" href="myinfo.php">
+                        <img class='my_photo' src='<?php echo $log_avatarsrc; ?>'>
                         <span><?php if (isset($log_firstname)) {echo $log_firstname;} ?></span>
                     </a>
                 </li>
 
                 <li class="menu_item">
                     <div id="contact_reqs_container" class="popup_badge_container menubar_container no_bg">
-                        <a id="contact_reqs_link" class="contact_reqs_link menubar_link" href="img/contact_requests.php" <?php echo $cr_icon_style; ?>></a>
-                        <a id="cr_badge_link" class="popup_badge_link" href="img/contact_requests.php">
+                        <a id="contact_reqs_link" class="contact_reqs_link menubar_link" href="contact_requests.php" <?php echo $cr_icon_style; ?>></a>
+                        <a id="cr_badge_link" class="popup_badge_link" href="contact_requests.php">
                             <div id="cr_badge" class="popup_badge" <?php echo $cr_badge_style; ?>>
                                 <?php echo $cr_badge; ?>
                             </div>
@@ -73,8 +73,8 @@ if ($log_avatar == null){
 
                 <li class="menu_item">
                     <div id="notifications_container" class="popup_badge_container menubar_container">
-                        <a id="notifications_link" class="notifications_link menubar_link" href="img/notifications.php">Notifications</a>
-                        <a id="notes_badge_link" class="popup_badge_link" href="img/notifications.php"><div id="notes_badge" class="popup_badge" <?php echo $notes_badge_style; ?>>
+                        <a id="notifications_link" class="notifications_link menubar_link" href="notifications.php">Notifications</a>
+                        <a id="notes_badge_link" class="popup_badge_link" href="notifications.php"><div id="notes_badge" class="popup_badge" <?php echo $notes_badge_style; ?>>
                             <?php echo $notes_badge; ?>
                             </div>
                         </a>
@@ -84,13 +84,13 @@ if ($log_avatar == null){
                 <div id="more_options" class="more_options non_container" onclick="toggle_more_options()" onmouseover="moreoptionsOver()" onmouseout="moreoptionsOut()">
                     <div id="down_arrow" class="down_arrow" alt="more_options"></div>
                     <ul id="more_options_submenu" class="more_options_submenu" onmouseover="moreoptionsOver()" onmouseout="moreoptionsOut()">
-                        <li onclick="location.href='img/user_includes/download_contacts.php'">
+                        <li onclick="location.href='user_includes/download_contacts.php'">
                             <div class="list_text">Download Contacts</div>
                         </li>
                         <li>
-                            <a class="list_text" href="img/settings.php">Settings &amp; Preferences</a>
+                            <a class="list_text" href="settings.php">Settings &amp; Preferences</a>
                         </li>
-                        <li onclick="location.href='img/logout.php'">
+                        <li onclick="location.href='logout.php'">
                             <div class="list_text">Log Out</div>
                         </li>
                     </ul>

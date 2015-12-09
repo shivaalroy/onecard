@@ -13,9 +13,9 @@ if(isset($_COOKIE["id"]) && isset($_COOKIE["pass"])) {
 session_destroy();
 // Double check to see if their sessions exists
 if(isset($_SESSION['userid'])){
-    header("location: message.php?msg=Error:_Logout_Failed");
+    header("location:message.php?msg=Error:_Logout_Failed");
 } else {
-    header("location: ".$url);
+    header("location:/");
     exit();
 } 
 ?>

@@ -16,6 +16,7 @@ if($profile_ok == true){
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/style/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600">
         <script src="/js/main.js"></script>
         <script src="/js/ajax.js"></script>
         <script src="/js/signup.js"></script>

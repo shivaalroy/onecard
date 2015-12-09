@@ -3,7 +3,7 @@ include_once("php_includes/home.php");
 include_once("php_includes/check_login_status.php");
 // If user is already logged in, header them away
 if($profile_ok == true){
-    header("location: ".$url);
+    header("location:/");
     exit();
 }
 
@@ -27,6 +27,7 @@ if(isset($_GET["login_attempt"])){
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/style/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600">
         <script src="/js/main.js"></script>
         <script src="/js/ajax.js"></script>
     </head>

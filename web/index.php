@@ -1,7 +1,6 @@
 <?php
 include_once("php_includes/home.php");
-// include_once("php_includes/check_login_status.php");
-$profile_ok = false;
+include_once("php_includes/check_login_status.php");
 // If user is already logged in, header them away
 if($profile_ok != true){
     require_once("template/tem_welcomepage.php");
@@ -48,7 +47,7 @@ if ($profile != "") {
     $isOwner = false;
     if($profile == $log_id){
         //$isOwner = true;
-        header("location: ".$url);
+        header("location:/");
         exit();
     }
     // Fetch the user row from the query above
