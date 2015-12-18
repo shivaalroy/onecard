@@ -1,6 +1,6 @@
 <?php
-require_once("../php_includes/home.php");
-require_once("../php_includes/db_conx.php");
+require_once("../includes/home.php");
+require_once("../includes/db_conx.php");
 $xml = new SimpleXMLElement('<xml/>');
 $sql = "SELECT MAX(id) FROM table_userinfo";
 $query = mysqli_query($db_conx, $sql);

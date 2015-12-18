@@ -1,5 +1,5 @@
 <?php
-include_once("../../php_includes/home.php");
+include_once("../../includes/home.php");
 
 header("Location: ".$mobile_url);
 

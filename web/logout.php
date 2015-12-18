@@ -1,5 +1,5 @@
 <?php
-include_once("php_includes/home.php");
+include_once("includes/home.php");
 ini_set('session.cookie_domain', '.onecard.10.mx');
 session_start();
 // Set Session data to an empty array

@@ -2,7 +2,7 @@
 // Ajax calls this shared info default code to execute
 if(isset($_POST["profile"])){
     // CONNECT TO THE DATABASE
-    include_once("../php_includes/check_login_status.php");
+    include_once("../includes/check_login_status.php");
     //initialize the user's contact information into variables
     $profile = preg_replace('#[^0-9]#i', '', $_POST["profile"]);
     $sql = "SELECT * FROM table_friends WHERE sharer='$log_id' AND sharee='$profile' AND accepted='1' LIMIT 1";
@@ -23,7 +23,7 @@ if(isset($_POST["profile"])){
 }
 if(isset($_POST["requested_info"])){
     // CONNECT TO THE DATABASE
-    include_once("../php_includes/check_login_status.php");
+    include_once("../includes/check_login_status.php");
     //initialize the user's contact information into variables
     $profile = preg_replace('#[^0-9]#i', '', $_POST["requested_info"]);
     $sql = "SELECT * FROM table_notifications WHERE initiator='$log_id' AND target='$profile' AND type='requesting_info' LIMIT 1";

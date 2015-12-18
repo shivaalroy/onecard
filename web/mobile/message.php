@@ -1,6 +1,6 @@
 <?php
-include_once("../php_includes/home.php");
-include_once("../php_includes/check_login_status.php");
+include_once("../includes/home.php");
+include_once("../includes/check_login_status.php");
 if ($profile_ok == true) {
     $headerBar = "templates/_mobile_loggedin_menubar.php";
     $sql = "SELECT firstname FROM table_userinfo WHERE id='$log_id' AND activated='1' LIMIT 1";

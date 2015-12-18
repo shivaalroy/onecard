@@ -1,6 +1,6 @@
 <?php
-include_once("../php_includes/home.php");
-include_once("../php_includes/check_login_status.php");
+include_once("../includes/home.php");
+include_once("../includes/check_login_status.php");
 // If user is already logged in, header them away
 if($profile_ok == true){
     header("location: ".$url);
@@ -10,7 +10,7 @@ if($profile_ok == true){
 // THIS CODE CHECKS TO SEE IF THERE WAS A FAILED LOGIN ATTEMPT
 if(isset($_GET["login_attempt"])){
     // CONNECT TO THE DATABASE
-    //include_once("../php_includes/db_conx.php");
+    //include_once("../includes/db_conx.php");
     // GATHER THE POSTED DATA INTO LOCAL VARIABLES AND SANITIZE
     $login_attempt = preg_replace("#[^0-9]#", "", $_GET['login_attempt']);
     $attempt = false;

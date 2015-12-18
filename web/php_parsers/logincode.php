@@ -1,10 +1,10 @@
 <?php
 session_start();
-include_once("../php_includes/home.php");
+include_once("../includes/home.php");
 // AJAX CALLS THIS LOGIN CODE TO EXECUTE
 if(isset($_POST["email"])){
     // CONNECT TO THE DATABASE
-    include_once("../php_includes/db_conx.php");
+    include_once("../includes/db_conx.php");
     // GATHER THE POSTED DATA INTO LOCAL VARIABLES AND SANITIZE
     $e = mysqli_real_escape_string($db_conx, $_POST['email']);
     $p = md5($_POST['password']);

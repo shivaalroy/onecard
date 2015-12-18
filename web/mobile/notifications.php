@@ -1,13 +1,13 @@
 <?php
-include_once("../php_includes/home.php");
-include_once("../php_includes/check_login_status.php");
+include_once("../includes/home.php");
+include_once("../includes/check_login_status.php");
 // If the page requestor is not logged in, usher them away
 if($profile_ok != true){
     header("location: ".$url);
     exit();
 }
 include_once("templates/_mobile_contact_list.php");
-include_once("../php_includes/get_timezone.php");
+include_once("../includes/get_timezone.php");
 
 $sql = "SELECT firstname FROM table_userinfo WHERE id='$log_id' AND activated='1' LIMIT 1";
 $query = mysqli_query($db_conx, $sql);

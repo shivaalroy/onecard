@@ -1,7 +1,7 @@
 <?php
 //THIS CODE LOADS THE USER'S CONTACT LIST (ONLY SHARED CONTACTS RIGHT NOW)
-include_once("php_includes/home.php");
-include_once("php_includes/check_login_status.php");
+include_once("includes/home.php");
+include_once("includes/check_login_status.php");
 $sql = "SELECT sharer FROM table_friends WHERE sharee='$log_id' AND accepted='1'";
 $query = mysqli_query($db_conx, $sql);
 $num = mysqli_num_rows($query);

@@ -1,6 +1,6 @@
 <?php
-include_once("../php_includes/home.php");
-include_once("../php_includes/check_login_status.php");
+include_once("../includes/home.php");
+include_once("../includes/check_login_status.php");
 if($profile_ok != true){
     exit();
 }
@@ -42,7 +42,7 @@ if (isset($_FILES["avatar"]["name"]) && $_FILES["avatar"]["tmp_name"] != ""){
         header("location: ".$url."message.php?msg=ERROR: File upload failed");
         exit();
     }
-    include_once("../php_includes/image_editing.php");
+    include_once("../includes/image_editing.php");
     $target_file = "../user/$log_id/$db_file_name";
     $resized_file = "../user/$log_id/$db_file_name";
     $wmax = 400;

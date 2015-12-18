@@ -1,5 +1,5 @@
 <?php
-include_once("php_includes/home.php");
+include_once("includes/home.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,7 +37,7 @@ include_once("php_includes/home.php");
     </head>
     <body>
         <?php
-include_once("php_includes/db_conx.php");
+include_once("includes/db_conx.php");
 
 $sql = "SELECT MAX(id) FROM table_users";
 $query = mysqli_query($db_conx, $sql);

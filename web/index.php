@@ -1,12 +1,12 @@
 <?php
-include_once("php_includes/home.php");
-include_once("php_includes/check_login_status.php");
+include_once("includes/home.php");
+include_once("includes/check_login_status.php");
 // If user is already logged in, header them away
 if($profile_ok != true){
     require_once("templates/_welcome.php");
     exit();
 }
-include_once("php_includes/contact_list.php");
+include_once("includes/contact_list.php");
 
 $sql = "SELECT * FROM table_userinfo WHERE id='$log_id' AND activated='1' LIMIT 1";
 $query = mysqli_query($db_conx, $sql);
@@ -153,7 +153,7 @@ function pvn($var) {
 /*
 if(isset($_POST["fnq"])){
     // CONNECT TO THE DATABASE
-    include_once("php_includes/db_conx.php");
+    include_once("includes/db_conx.php");
     // GATHER THE POSTED DATA INTO LOCAL VARIABLES AND SANITIZE
     $fnq = preg_replace('#[^a-z]#i', '', $_POST['fnq']);
     $lnq = preg_replace('#[^a-z]#i', '', $_POST['lnq']);

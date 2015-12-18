@@ -2,8 +2,8 @@
 // Ajax calls this REGISTRATION code to execute
 if(isset($_POST["fn"])){
     // CONNECT TO THE DATABASE
-    include_once("../php_includes/db_conx.php");
-    include_once("../php_includes/home.php");
+    include_once("../includes/db_conx.php");
+    include_once("../includes/home.php");
     // GATHER THE POSTED DATA INTO LOCAL VARIABLES
     //$u = preg_replace('#[^a-z0-9]#i', '', $_POST['u']);
     $fn = preg_replace('#[^a-z]#i', '', $_POST['fn']);
@@ -43,7 +43,7 @@ if(isset($_POST["fn"])){
         // Begin Insertion of data into the database
         // Hash the password and apply your own mysterious unique salt
         /* $cryptpass = crypt($p);
-		include_once ("php_includes/randStrGen.php"); change */
+		include_once ("includes/randStrGen.php"); change */
         $p_hash = md5($p); //change
         // Add user info into the database table for the main site table
         $sql = "INSERT INTO table_users (email, password, ip, signup, lastlogin, notescheck)

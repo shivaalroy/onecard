@@ -2,7 +2,7 @@
 // Ajax calls this account info default code to execute
 if(isset($_POST["defaultinfo"])){
     // CONNECT TO THE DATABASE
-    include_once("../php_includes/check_login_status.php");
+    include_once("../includes/check_login_status.php");
     //initialize the user's contact information into variables
     $sql = "SELECT * FROM table_userinfo WHERE id='$log_id' AND activated='1' LIMIT 1";
     $query = mysqli_query($db_conx, $sql);
@@ -23,7 +23,7 @@ if(isset($_POST["defaultinfo"])){
 // Ajax calls this account preferences default code to execute
 if(isset($_POST["defaultpreferences"])){
     // CONNECT TO THE DATABASE
-    include_once("../php_includes/check_login_status.php");
+    include_once("../includes/check_login_status.php");
     //initialize the user's contact information into variables
     $sql = "SELECT * FROM table_useroptions WHERE id='$log_id' LIMIT 1";
     $query = mysqli_query($db_conx, $sql);

@@ -1,7 +1,7 @@
 <?php
 if (isset($_GET['id']) && isset($_GET['ref'])) {
     // Connect to database and sanitize incoming $_GET variables
-    include_once("php_includes/db_conx.php");
+    include_once("includes/db_conx.php");
     $id = preg_replace('#[^0-9]#i', '', $_GET['id']);
     $hashRef = preg_replace('#[^0-9a-z]#i', '', $_GET['ref']);
     // Evaluate the lengths of the incoming $_GET variable

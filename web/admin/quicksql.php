@@ -1,5 +1,5 @@
 <?php
-include_once("php_includes/db_conx.php");
+include_once("includes/db_conx.php");
 /*
 $sql = "UPDATE table_friends SET accepted='0', ignored='0' WHERE id='2' LIMIT 1";
 $query = mysqli_query($db_conx, $sql);

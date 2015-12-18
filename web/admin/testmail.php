@@ -1,6 +1,6 @@
 <?php
 require '../vendor/autoload.php';
-include_once 'php_includes/home.php';
+include_once 'includes/home.php';
 $username = getenv('SENDGRID_USERNAME');
 $password = getenv('SENDGRID_PASSWORD');
 $sendgrid = new SendGrid($username, $password);

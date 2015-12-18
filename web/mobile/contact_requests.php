@@ -1,6 +1,6 @@
 <?php
-include_once("../php_includes/home.php");
-include_once("../php_includes/check_login_status.php");
+include_once("../includes/home.php");
+include_once("../includes/check_login_status.php");
 // If the page requestor is not logged in, usher them away
 if($profile_ok != true){
     header("location: ".$url);

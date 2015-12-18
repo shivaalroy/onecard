@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['type']) && isset($_POST['profile'])){
     //connect to the databse
-    include_once("../php_includes/check_login_status.php");
+    include_once("../includes/check_login_status.php");
     //get the sharee's profile id and make sure the sharee exists
     $profile = preg_replace('#[^0-9]#i', '', $_POST['profile']);
     $sql = "SELECT COUNT(id) FROM table_userinfo WHERE id='$profile' AND activated='1' LIMIT 1";
@@ -187,7 +187,7 @@ exit();
 }
 if (isset($_POST['action']) && isset($_POST['reqid']) && isset($_POST['sharer'])){
     //connect to the databse
-    include_once("../php_includes/check_login_status.php");
+    include_once("../includes/check_login_status.php");
     //get sharer's info and initialize array
     $sql = "SELECT * FROM table_userinfo WHERE id='$log_id' AND activated='1' LIMIT 1";
     $query = mysqli_query($db_conx, $sql);
@@ -258,7 +258,7 @@ if (isset($_POST['action']) && isset($_POST['reqid']) && isset($_POST['sharer'])
 }
 if (isset($_POST['request'])){
     //connect to the databse
-    include_once("../php_includes/check_login_status.php");
+    include_once("../includes/check_login_status.php");
     //get the sharee's profile id and make sure the sharee exists
     $profile = preg_replace('#[^0-9]#i', '', $_POST['request']);
     $sql = "SELECT COUNT(id) FROM table_userinfo WHERE id='$profile' AND activated='1' LIMIT 1";

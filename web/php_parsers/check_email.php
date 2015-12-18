@@ -1,7 +1,7 @@
 <?php
 // Ajax calls this EMAIL CHECK code to execute
 if(isset($_POST["settings_emailcheck"])){
-    include_once("../php_includes/check_login_status.php");
+    include_once("../includes/check_login_status.php");
     $settings_email = mysqli_real_escape_string($db_conx, $_POST['settings_emailcheck']);
     $sql = "SELECT id FROM table_users WHERE email='$settings_email' LIMIT 1";
     $query = mysqli_query($db_conx, $sql);
@@ -25,7 +25,7 @@ if(isset($_POST["settings_emailcheck"])){
 
 // Ajax calls this EMAIL CHECK code to execute
 if(isset($_POST["reg_emailcheck"])){
-    include_once("../php_includes/db_conx.php");
+    include_once("../includes/db_conx.php");
     $reg_email = mysqli_real_escape_string($db_conx, $_POST['reg_emailcheck']);
     $sql = "SELECT id FROM table_users WHERE email='$reg_email' LIMIT 1";
     $query = mysqli_query($db_conx, $sql);

@@ -1,6 +1,6 @@
 <?php
-include_once("../php_includes/home.php");
-include_once("../php_includes/check_login_status.php");
+include_once("../includes/home.php");
+include_once("../includes/check_login_status.php");
 // If user is already logged in, header them away
 if($profile_ok == true){
     header("location: ".$url);

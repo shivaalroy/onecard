@@ -1,3 +1,3 @@
 <?php
-include_once("../../php_includes/check_folder_permission.php");
+include_once("../../includes/check_folder_permission.php");
 ?>

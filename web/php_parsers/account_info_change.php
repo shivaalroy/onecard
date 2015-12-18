@@ -2,7 +2,7 @@
 // Ajax calls this contact info change code to execute
 if(isset($_POST["firstname"])){
     // CONNECT TO THE DATABASE
-    include_once("../php_includes/check_login_status.php");
+    include_once("../includes/check_login_status.php");
     //initialize the user's contact information into variables
     $sql = "SELECT * FROM table_userinfo WHERE id='$log_id' AND activated='1' LIMIT 1";
     $query = mysqli_query($db_conx, $sql);
@@ -103,8 +103,8 @@ if(isset($_POST["firstname"])){
 // Ajax calls this email change code to execute
 if(isset($_POST["new_email"])){
     // CONNECT TO THE DATABASE
-    include_once("../php_includes/home.php");
-    include_once("../php_includes/check_login_status.php");
+    include_once("../includes/home.php");
+    include_once("../includes/check_login_status.php");
     //initialize the user's contact information into variables
     $sql = "SELECT * FROM table_users WHERE id='$log_id' AND activated='1' LIMIT 1";
     $query = mysqli_query($db_conx, $sql);
@@ -189,8 +189,8 @@ if(isset($_POST["new_email"])){
 //Ajax calls this password change code to execute
 if(isset($_POST["old_password"]) && isset($_POST["new_password"])){
     // CONNECT TO THE DATABASE
-    include_once("../php_includes/home.php");
-    include_once("../php_includes/check_login_status.php");
+    include_once("../includes/home.php");
+    include_once("../includes/check_login_status.php");
 
     // GATHER THE POSTED DATA INTO LOCAL VARIABLES
     $old_p = $_POST['old_password'];
@@ -227,8 +227,8 @@ if(isset($_POST["old_password"]) && isset($_POST["new_password"])){
 //Ajax calls this preferences change code to execute
 if(isset($_POST["sort_order"]) && isset($_POST["disp_order"])){
     // CONNECT TO THE DATABASE
-    include_once("../php_includes/home.php");
-    include_once("../php_includes/check_login_status.php");
+    include_once("../includes/home.php");
+    include_once("../includes/check_login_status.php");
 
     // GATHER THE POSTED DATA INTO LOCAL VARIABLES
     $sort_order = $_POST['sort_order'];

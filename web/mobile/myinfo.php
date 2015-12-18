@@ -1,6 +1,6 @@
 <?php
-include_once("../php_includes/home.php");
-include_once("../php_includes/check_login_status.php");
+include_once("../includes/home.php");
+include_once("../includes/check_login_status.php");
 // Initialize any variables that the page might echo
 if ($profile_ok == false) {
     header("location: ".$url);
