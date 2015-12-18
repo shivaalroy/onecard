@@ -7,7 +7,7 @@
         </div>
         <div id="loggedout_menubar_login_container" class="loggedout_menubar_login_container">
             <!-- LOGIN FORM -->
-            <form id="login_form_header" class="login_form_header" onsubmit="disable_btn('login_btn_header');" action="php_parsers/logincode.php" method="post">
+            <form id="login_form_header" class="login_form_header" onsubmit="disable_btn('login_btn_header');" action="parsers/logincode.php" method="post">
                 <table style="padding:0;">
                     <tbody>
                         <tr>

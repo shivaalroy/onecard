@@ -4,7 +4,7 @@
     <p>Either the email or password given was incorrect.</p>
 </div>
 <div id="login_centerbox" class="login_centerbox">
-    <form id="login_form" action="img/php_parsers/logincode.php" onsubmit="disable_btn('login_btn_big')" method="post">
+    <form id="login_form" action="img/parsers/logincode.php" onsubmit="disable_btn('login_btn_big')" method="post">
         <input type="email" id="email" name="email" class="login_form_inputtext form_fields" maxlength="88" placeholder="Email">
         <input type="password" id="password" name="password" class="login_form_inputtext form_fields" maxlength="100" placeholder="Password">
         <input type="hidden" name="device" value="mobile">

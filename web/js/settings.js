@@ -19,7 +19,7 @@ function check_new_email1(){
     var url2 = document.URL;
     var url = escapeHTML(url2);
     if(e != ""){
-        var ajax = ajaxObj("POST", "php_parsers/check_email.php");
+        var ajax = ajaxObj("POST", "parsers/check_email.php");
         ajax.send("settings_emailcheck="+e);
         ajax.onreadystatechange = function() {
             if(ajaxReturn(ajax) == true) {
@@ -116,7 +116,7 @@ function change_email(){
     emailstatus.style.display = 'inline-block';
     emailstatus.style.color = "#000";
     emailstatus.innerHTML = "Please wait...";
-    var ajax = ajaxObj("POST", "php_parsers/account_info_change.php");
+    var ajax = ajaxObj("POST", "parsers/account_info_change.php");
     ajax.send("new_email="+e1);
     /*
     ajax.onreadystatechange = function() {
@@ -276,7 +276,7 @@ function change_password(){
         passwordstatus.innerHTML = "Password must contain a lowercase letter, an uppercase letter, and a number";
     } else {
         passwordstatus.style.display = 'none'; //please wait...
-        var ajax = ajaxObj("POST", "php_parsers/account_info_change.php");
+        var ajax = ajaxObj("POST", "parsers/account_info_change.php");
         ajax.send("old_password="+p_old+"&new_password="+p1);
         ajax.onreadystatechange = function() {
             if(ajaxReturn(ajax) == true) {
@@ -324,7 +324,7 @@ function change_preferences(){
     var disp_order = _("disp_order").value;
     var prefstatus = _("preferencesstatus");
     prefstatus.style.display = 'none'; //please wait...
-    var ajax = ajaxObj("POST", "php_parsers/account_info_change.php");
+    var ajax = ajaxObj("POST", "parsers/account_info_change.php");
     ajax.send("sort_order="+sort_order+"&disp_order="+disp_order);
     ajax.onreadystatechange = function() {
         if(ajaxReturn(ajax) == true) {
@@ -342,7 +342,7 @@ function change_preferences(){
 }
 function clear_preferences(){
     var return_list = "";
-    var ajax = ajaxObj("POST", "php_parsers/account_info_default.php");
+    var ajax = ajaxObj("POST", "parsers/account_info_default.php");
     ajax.send("defaultpreferences=yes");
     ajax.onreadystatechange = function() {
         if(ajaxReturn(ajax) == true) {

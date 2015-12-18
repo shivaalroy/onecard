@@ -1,6 +1,6 @@
 window.onload = function() {
     var offset = new Date().getTimezoneOffset();
-    var ajax = ajaxObj("POST", "php_parsers/set_timezone.php");
+    var ajax = ajaxObj("POST", "parsers/set_timezone.php");
     ajax.send("offset="+offset);
     /*
     ajax.onreadystatechange = function() {

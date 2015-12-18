@@ -140,7 +140,7 @@ function change_info(){
     changestatus1.innerHTML = "Please wait...";
     changestatus2.style.display = 'block';
     changestatus2.innerHTML = "Please wait...";
-    var ajax = ajaxObj("POST", "php_parsers/account_info_change.php");
+    var ajax = ajaxObj("POST", "parsers/account_info_change.php");
     var list2 = list.slice(0, -1);
     //changestatus1.innerHTML = list2;
     ajax.send(list2);
@@ -189,7 +189,7 @@ function default_all(){
     if(confirm("Are you sure you want to revert all changes to the last save?")) {
         //_("changestatus1").innerHTML = list2;
         var return_list = "";
-        var ajax = ajaxObj("POST", "php_parsers/account_info_default.php");
+        var ajax = ajaxObj("POST", "parsers/account_info_default.php");
         ajax.send("defaultinfo=yes");
         ajax.onreadystatechange = function() {
             if(ajaxReturn(ajax) == true) {

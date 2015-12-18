@@ -43,7 +43,7 @@ if(isset($_GET["login_attempt"])){
                         <p>Either the email or password given was incorrect.</p>
                     </div>
                     <!-- LOGIN FORM -->
-                    <form id="login_form" action="php_parsers/logincode.php" onsubmit="disable_btn('login_btn_big')" method="post">
+                    <form id="login_form" action="parsers/logincode.php" onsubmit="disable_btn('login_btn_big')" method="post">
                         <div class="login_form_row">
                             <label for="email" class="login_form_label">Email</label>
                             <input type="email" id="email" name="email" class="login_form_inputtext" maxlength="88">

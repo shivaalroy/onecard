@@ -44,7 +44,7 @@ function request_info(){
         }
         requeststatus.style.display = 'block';
         requeststatus.innerHTML = "Please wait...";
-        var ajax = ajaxObj("POST", "php_parsers/friend_system.php");
+        var ajax = ajaxObj("POST", "parsers/friend_system.php");
         //requeststatus.innerHTML = list;
         ajax.send(list);
         /*
@@ -117,7 +117,7 @@ function share_info(){
         }
         changestatus.style.display = 'block';
         changestatus.innerHTML = "Please wait...";
-        var ajax = ajaxObj("POST", "php_parsers/friend_system.php");
+        var ajax = ajaxObj("POST", "parsers/friend_system.php");
         var list2 = list.slice(0, -1);
         //changestatus.innerHTML = list2;
         ajax.send(list2);
@@ -167,7 +167,7 @@ function unshare_info(){
         }
         changestatus.style.display = 'block';
         changestatus.innerHTML = "Please wait...";
-        var ajax = ajaxObj("POST", "php_parsers/friend_system.php");
+        var ajax = ajaxObj("POST", "parsers/friend_system.php");
         var list2 = list.slice(0, -1);
         //changestatus.innerHTML = list2;
         ajax.send(list2);
@@ -210,7 +210,7 @@ function default_all(){
     if(confirm("Are you sure you want to revert all changes to the last save?")) {
         _("changestatus").innerHTML = "";
         var return_list = "";
-        var ajax = ajaxObj("POST", "php_parsers/friend_shared_info.php");
+        var ajax = ajaxObj("POST", "parsers/friend_shared_info.php");
         ajax.send("profile="+sharer_elems['profile']);
         ajax.onreadystatechange = function() {
             if(ajaxReturn(ajax) == true) {
@@ -258,7 +258,7 @@ function friendToggle(type,user,elem){
         return false;
     }
     _(elem).innerHTML = 'please wait ...';
-    var ajax = ajaxObj("POST", "php_parsers/friend_system.php");
+    var ajax = ajaxObj("POST", "parsers/friend_system.php");
     ajax.onreadystatechange = function() {
         if(ajaxReturn(ajax) == true) {
             if(ajax.responseText == "friend_request_sent"){
@@ -280,7 +280,7 @@ function blockToggle(type,blockee,elem){
     }
     var elem = document.getElementById(elem);
     elem.innerHTML = 'please wait ...';
-    var ajax = ajaxObj("POST", "php_parsers/block_system.php");
+    var ajax = ajaxObj("POST", "parsers/block_system.php");
     ajax.onreadystatechange = function() {
         if(ajaxReturn(ajax) == true) {
             if(ajax.responseText == "blocked_ok"){

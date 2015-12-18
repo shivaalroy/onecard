@@ -2,7 +2,7 @@ var mousePosition = "";
 $(function() {
     //calls ajax function to set timezone in database
     var offset = new Date().getTimezoneOffset();
-    var ajax = ajaxObj("POST", "http://onecard.x10.mx/php_parsers/set_timezone.php");
+    var ajax = ajaxObj("POST", "http://onecard.x10.mx/parsers/set_timezone.php");
     ajax.send("offset="+offset);
     //alert(offset);
     /*
@@ -86,7 +86,7 @@ function menubar_user_search(){
     var url2 = document.URL;
     var url = escapeHTML(url2);
     if(oq != ""){
-        var ajax = ajaxObj("POST", "php_parsers/ajax_livesearch.php");
+        var ajax = ajaxObj("POST", "parsers/ajax_livesearch.php");
         ajax.send("&oq="+oq);
         ajax.onreadystatechange = function() {
             if(ajaxReturn(ajax) == true) {

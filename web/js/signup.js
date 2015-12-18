@@ -15,7 +15,7 @@ function checkreg_email(){
     var e2 = _("reg_email").value;
     var e = e2.replace(/[' "]/gi, "");
     if(e != ""){
-        var ajax = ajaxObj("POST", "php_parsers/check_email.php");
+        var ajax = ajaxObj("POST", "parsers/check_email.php");
         ajax.send("reg_emailcheck="+e);
         ajax.onreadystatechange = function() {
             if(ajaxReturn(ajax) == true) {
@@ -173,7 +173,7 @@ function signup(){
     } else {
         signupstatus.style.display = 'none'; //please wait...
         disable_btn("signup_btn"); //please wait...
-        var ajax = ajaxObj("POST", "php_parsers/registration.php");
+        var ajax = ajaxObj("POST", "parsers/registration.php");
         ajax.send("fn="+fn+"&ln="+ln+"&e="+e+"&p="+p1+"&c="+c+"&g="+g);
         ajax.onreadystatechange = function() {
             if(ajaxReturn(ajax) == true) {

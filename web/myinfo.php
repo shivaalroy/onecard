@@ -19,7 +19,7 @@ if($profile_ok) {
     $log_country = $users_arr['country'];
     $log_avatar1 = $users_arr['avatar1'];
     $avatar_form  = '
-<form id="avatar_form" enctype="multipart/form-data" method="post" action="php_parsers/photo_system.php">
+<form id="avatar_form" enctype="multipart/form-data" method="post" action="parsers/photo_system.php">
     <h4>Change your avatar</h4>
     <input type="file" name="avatar" required>
     <div>
@@ -27,9 +27,9 @@ if($profile_ok) {
     </div>
 </form>';
     if ($log_avatar1 == NULL) {
-        $profile_pic = '<img src="'.$url.'img/defaultavatar-'.strtolower($log_gender).'.jpg" alt="'.$user1.'">';
+        $profile_pic = '<img src="/img/defaultavatar-'.strtolower($log_gender).'.jpg" alt="'.$log_firstname." ".$log_lastname.'">';
     } else {
-        $profile_pic = '<img src="'.$url.'user/'.$log_id.'/'.$log_avatar1.'" alt="'.$log_firstname." ".$log_lastname.'">';
+        $profile_pic = '<img src="/user/'.$log_id.'/'.$log_avatar1.'" alt="'.$log_firstname." ".$log_lastname.'">';
     }
 }
 
@@ -89,7 +89,7 @@ $jsobj = "var elem_obj = { \n".$jsobj2."\n};";
                         <div id="changestatus1" class="changestatus"></div>
 
                         <div id="profile_pic_box">
-                            <form id="avatar_form" name="avatar_form" enctype="multipart/form-data" method="post" action="php_parsers/photo_system.php" onmouseup='trigger_upload();'>
+                            <form id="avatar_form" name="avatar_form" enctype="multipart/form-data" method="post" action="parsers/photo_system.php" onmouseup='trigger_upload();'>
                                 <h4>Update Contact Photo</h4>
                                 <div id='upfile_text'>Upload a Photo</div>
                                 <input type="file" id='upfile' name="avatar" onchange="avatar_form.submit(); avatar_form_submitted();" required>
