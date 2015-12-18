@@ -13,7 +13,7 @@ if($profile_ok == true){
     <head>
         <meta charset="UTF-8">
         <title>Sign Up</title>
-        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600">

@@ -9,7 +9,7 @@
     <body>
         <div style="padding:10px; background:#09a360; font-size:24px; color:#fff;">
             <a href="'.$url.'">
-                <img src="'.$url.'img/logo.png" height="30" alt="Social Network" style="border:none; float:left; padding-right: 20px;">
+                <img src="'.$url.'images/logo.png" height="30" alt="Social Network" style="border:none; float:left; padding-right: 20px;">
             </a>
             Account Activation
         </div>

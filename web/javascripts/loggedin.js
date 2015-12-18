@@ -20,7 +20,7 @@ $(function() {
     $('body').mouseup(function(){
         if (mousePosition != "moreoptionsOver") {
             $('#more_options_submenu').css("display","none");
-            $("#down_arrow").css("background-image","url(../img/down_arrow_black.png)");
+            $("#down_arrow").css("background-image","url(../images/down_arrow_black.png)");
             $("#down_arrow").css("opacity","0.4");
         }
     });
@@ -175,11 +175,11 @@ function toggle_more_options(){
     currentdisplay = $('#more_options_submenu').css("display");
     if (currentdisplay == "none") {
         submenu.style.display = "block";
-        $("#down_arrow").css("background-image","url(../img/down_arrow_white.png)");
+        $("#down_arrow").css("background-image","url(../images/down_arrow_white.png)");
         $("#down_arrow").css("opacity","1");
     } else if (currentdisplay == "block") {
         submenu.style.display = "none";
-        $("#down_arrow").css("background-image","url(../img/down_arrow_black.png)");
+        $("#down_arrow").css("background-image","url(../images/down_arrow_black.png)");
         $("#down_arrow").css("opacity","0.4");
     }
 }

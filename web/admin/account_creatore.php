@@ -58,7 +58,7 @@ if(isset($_POST["fn"])){
     <head>
         <meta charset="UTF-8">
         <title>Create Accounts</title>
-        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     </head>
     <body>
         <form id="account_creatore_form" action="account_creatore.php" method="post">

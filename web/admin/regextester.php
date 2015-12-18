@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Regex Tester</title>
-        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/stylesheets/style.css">
         <style type="text/css">
             #test_img {

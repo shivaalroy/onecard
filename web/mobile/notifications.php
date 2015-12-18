@@ -93,7 +93,7 @@ if($numrows < 1){
         $initiatoravatar = $initiatorrow['avatar1'];
         $initiatorname = $initiatorfn." ".$initiatorln;
         if($initiatoravatar == NULL){
-            $initiatorpic = '<img src="'.$url.'img/defaultavatar-'.$initiatorgender.'.jpg" alt="'.$initiatorname.'" class="initiator_pic">';
+            $initiatorpic = '<img src="'.$url.'images/defaultavatar-'.$initiatorgender.'.jpg" alt="'.$initiatorname.'" class="initiator_pic">';
         } else {
             $initiatorpic = '<img src="'.$url.'user/'.$initiator.'/'.$initiatoravatar.'" alt="'.$initiatorname.'" class="initiator_pic">';
         }
@@ -120,7 +120,7 @@ $query = mysqli_query($db_conx, $sql);
     <head>
         <meta name="viewport" charset="UTF-8" content="width=device-width, user-scalable=no">
         <title>Notifications</title>
-        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="img/mobile/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/javascripts/main.js"></script>

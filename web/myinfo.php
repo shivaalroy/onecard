@@ -27,7 +27,7 @@ if($profile_ok) {
     </div>
 </form>';
     if ($log_avatar1 == NULL) {
-        $profile_pic = '<img src="/img/defaultavatar-'.strtolower($log_gender).'.jpg" alt="'.$log_firstname." ".$log_lastname.'">';
+        $profile_pic = '<img src="/images/defaultavatar-'.strtolower($log_gender).'.jpg" alt="'.$log_firstname." ".$log_lastname.'">';
     } else {
         $profile_pic = '<img src="/user/'.$log_id.'/'.$log_avatar1.'" alt="'.$log_firstname." ".$log_lastname.'">';
     }
@@ -63,7 +63,7 @@ $jsobj = "var elem_obj = { \n".$jsobj2."\n};";
     <head>
         <meta charset="UTF-8">
         <title>My Info</title>
-        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/javascripts/main.js"></script>

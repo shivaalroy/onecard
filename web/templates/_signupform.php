@@ -22,7 +22,7 @@
         <?php include_once("_country_list.php"); ?>
     </select>
     <div class="viewTerms">
-        By clicking Sign Up, you agree to our <a href="img/terms.php" target="_blank">Terms</a>, <a href="#" target="_blank" onclick="">Data Use Policy</a> <br />
+        By clicking Sign Up, you agree to our <a href="terms.php" target="_blank">Terms</a>, <a href="#" target="_blank" onclick="">Data Use Policy</a> <br />
         and our <a href="#" target="_blank" onclick="">Cookie Policy</a>.
     </div>
     <button id="signup_btn" class="signup_btn" onclick="signup()">Sign Up</button>

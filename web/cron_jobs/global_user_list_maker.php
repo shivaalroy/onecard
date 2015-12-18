@@ -24,7 +24,7 @@ for ($id = 1; $id <= $max_id; $id++) {
             $location = $city.", ".$country;
         }
         if($avatar == NULL){
-            $avatarsrc = 'img/defaultavatar-'.$gender.'.jpg';
+            $avatarsrc = 'images/defaultavatar-'.$gender.'.jpg';
         } else {
             $avatarsrc = 'user/'.$id.'/'.$avatar;
         }

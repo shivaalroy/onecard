@@ -84,7 +84,7 @@ if(isset($_GET['id']) && isset($_GET['p'])){
     <head>
         <meta charset="UTF-8">
         <title>Forgot Password</title>
-        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/javascripts/main.js"></script>

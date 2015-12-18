@@ -24,7 +24,7 @@ if(isset($_GET["login_attempt"])){
     <head>
         <meta charset="UTF-8">
         <title>Log In</title>
-        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600">
@@ -64,7 +64,7 @@ if(isset($_GET["login_attempt"])){
                             <input type="submit" id="login_btn_big" class="login_btn_big" value="Log In">
                         </div>
                         <div class="login_form_row">
-                            <a href="img/forgot_pass.php">Forgot Your Password?</a>
+                            <a href="forgot_pass.php">Forgot Your Password?</a>
                         </div>
                     </form>
                     <!-- LOGIN FORM -->

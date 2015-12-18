@@ -10,7 +10,7 @@ if ($cr_badge < 1 || $current_url == "contact_requests.php") {
     $cr_badge_style = "style='display: none;'";
 }
 if ($cr_badge > 0 || $current_url == "contact_requests.php") {
-    $cr_icon_style = "style='background-image: url(../img/contact_card_white_w_male_avatar.png); opacity:0.95;'";
+    $cr_icon_style = "style='background-image: url(../images/contact_card_white_w_male_avatar.png); opacity:0.95;'";
 }
 
 $sql2 = "SELECT * FROM table_notifications WHERE target='$log_id' AND new='1' ORDER BY date_time ASC";
@@ -26,7 +26,7 @@ $row = mysqli_fetch_row($query3);
 $log_gender = strtolower($row[0]);
 $log_avatar = $row[1];
 if ($log_avatar == null){
-    $log_avatarsrc = 'img/defaultavatar-'.$log_gender.'.jpg';
+    $log_avatarsrc = 'images/defaultavatar-'.$log_gender.'.jpg';
 } else {
     $log_avatarsrc = 'user/'.$log_id.'/'.$log_avatar;
 }
@@ -35,12 +35,12 @@ if ($log_avatar == null){
     <div id="loggedin_menubar" class="loggedin_menubar">
         <div id="loggedin_menubar_left" class="loggedin_menubar_left">
             <a href="/" class="home_link">
-                <img class="home_img" src="/img/logo_loggedin.png" alt="logo" title="OneCard">
+                <img class="home_img" src="/images/logo_loggedin.png" alt="logo" title="OneCard">
             </a>
             <form name="menubar_search" id="menubar_search" class="menubar_search" onsubmit="return false;">
                 <input type="search" id="omni_query" class="search_inputtext omni_query_and_result" onfocus="menubar_user_search()" maxlength="200" placeholder="Search for people">
                 <button id="menubar_search_btn" class="menubar_search_btn" onclick="menubar_user_search()">
-                    <img class="search_magglass" src="/img/search_magglass.png" alt="Search">
+                    <img class="search_magglass" src="/images/search_magglass.png" alt="Search">
                 </button>
                 <br />
                 <div id="live_results_box" class="live_results_box omni_query_and_result" onmouseover="lrbOver()" onmouseout="lrbOut()">

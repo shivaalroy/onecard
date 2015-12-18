@@ -51,7 +51,7 @@ INCLUDE_ONCE CODE HERE
     <head>
         <meta charset="UTF-8">
         <title>New Contact</title>
-        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/javascripts/main.js"></script>

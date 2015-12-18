@@ -26,7 +26,7 @@ $row = mysqli_fetch_row($query3);
 $log_gender = strtolower($row[0]);
 $log_avatar = $row[1];
 if ($log_avatar == null){
-    $log_avatarsrc = 'img/defaultavatar-'.$log_gender.'.jpg';
+    $log_avatarsrc = 'images/defaultavatar-'.$log_gender.'.jpg';
 } else {
     $log_avatarsrc = 'user/'.$log_id.'/'.$log_avatar;
 }

@@ -43,7 +43,7 @@
                                 </div>
                             </td>
                             <td>
-                                <a href="img/forgot_pass.php">Forgot your password?</a>
+                                <a href="forgot_pass.php">Forgot your password?</a>
                             </td>
                             <td>
                                 <span id="loginstatus" class="loginstatus"></span>

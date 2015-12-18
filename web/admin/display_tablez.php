@@ -6,7 +6,7 @@ include_once("includes/home.php");
     <head>
         <meta charset="UTF-8">
         <title>Display Tables</title>
-        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <style>
             table, th, td {
                 border: 1px solid black;

@@ -268,7 +268,7 @@ input:focus, select:focus, textarea:focus, button:focus {
     background: none;
 }
 .loggedin_menubar_right #contact_reqs_link {
-    background-image: url(../img/contact_card_black_w_male_avatar.png);
+    background-image: url(../images/contact_card_black_w_male_avatar.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-origin: content-box;
@@ -308,7 +308,7 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 .loggedin_menubar_right .more_options .down_arrow {
     height: 7px;
-    background-image: url(../img/down_arrow_black.png);
+    background-image: url(../images/down_arrow_black.png);
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.40;

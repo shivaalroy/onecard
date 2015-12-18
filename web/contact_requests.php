@@ -32,7 +32,7 @@ function sharedContactReqs($array, $conx, $old) {
     }
     $sharerlocation = $sharercity.$sharercountry;
     if($shareravatar == NULL){
-        $sharerpic = '<img src="'.$url.'img/defaultavatar-'.$sharergender.'.jpg" alt="'.$sharername.'" class="sharer_pic">';
+        $sharerpic = '<img src="'.$url.'images/defaultavatar-'.$sharergender.'.jpg" alt="'.$sharername.'" class="sharer_pic">';
     } else {
         $sharerpic = '<img src="'.$url.'user/'.$sharer.'/'.$shareravatar.'" alt="'.$sharername.'" class="sharer_pic">';
     }
@@ -167,7 +167,7 @@ if($numrows < 1){
     <head>
         <meta charset="UTF-8">
         <title>Contact Requests</title>
-        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/javascripts/main.js"></script>
