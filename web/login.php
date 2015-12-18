@@ -25,14 +25,14 @@ if(isset($_GET["login_attempt"])){
         <meta charset="UTF-8">
         <title>Log In</title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/style/style.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600">
         <script src="/js/main.js"></script>
         <script src="/js/ajax.js"></script>
     </head>
     <body>
-        <?php include_once("template/tem_loggedout_menubar_wsignupbtn.php"); ?>
+        <?php include_once("templates/_loggedout_menubar_wsignupbtn.php"); ?>
         <div class="flat_ui_bg">
             <div id="pageMiddle_centered" class="pageMiddle_centered">
                 <div id="login_centerbox" class="login_centerbox" style="margin-top: 60px;">
@@ -71,6 +71,6 @@ if(isset($_GET["login_attempt"])){
                 </div>
             </div>
         </div>
-        <?php include_once("template/tem_loggedout_footer.php"); ?>
+        <?php include_once("templates/_loggedout_footer.php"); ?>
     </body>
 </html>

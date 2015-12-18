@@ -19,7 +19,7 @@
 
     <div class="country">Country</div>
     <select id="country" class="country_select" onfocus="hideElement('signupstatus')">
-        <?php include_once("tem_country_list.php"); ?>
+        <?php include_once("_country_list.php"); ?>
     </select>
     <div class="viewTerms">
         By clicking Sign Up, you agree to our <a href="img/terms.php" target="_blank">Terms</a>, <a href="#" target="_blank" onclick="">Data Use Policy</a> <br />

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Regex Tester</title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/style/style.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
         <style type="text/css">
             #test_img {
                 border-radius: 10px;

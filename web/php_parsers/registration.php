@@ -79,7 +79,7 @@ if(isset($_POST["fn"])){
             <head>
                 <meta charset="UTF-8">
                 <title>OneCard Message</title>
-                <link rel="stylesheet" href="'.$url.'style/style.css">
+                <link rel="stylesheet" href="'.$url.'stylesheets/style.css">
             </head>
 
             <body>

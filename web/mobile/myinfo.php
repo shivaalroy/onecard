@@ -64,7 +64,7 @@ $jsobj = "var elem_obj = { \n".$jsobj2."\n};";
         <meta name="viewport" charset="UTF-8" content="width=device-width, user-scalable=no">
         <title>My Info</title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="img/mobile/style/style.css">
+        <link rel="stylesheet" href="img/mobile/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/js/main.js"></script>
         <script src="/js/ajax.js"></script>
@@ -75,7 +75,7 @@ $jsobj = "var elem_obj = { \n".$jsobj2."\n};";
         </script>
     </head>
     <body>
-        <?php include_once("template/tem_mobile_loggedin_menubar.php"); ?>
+        <?php include_once("templates/_mobile_loggedin_menubar.php"); ?>
         <div class="body_background" style="height: auto;">
             <div id="pageMiddle_centered" class="pageMiddle_centered">
                 <div id="myinfoform" class="myinfoform main_box white_box">
@@ -116,7 +116,7 @@ $jsobj = "var elem_obj = { \n".$jsobj2."\n};";
                             <div id="country_container" class="contact_element">
                                 <span class="main">Country</span>
                                 <select id="country" class="myinfo_country_select" onfocus="hideElement('changestatus1'); hideElement('changestatus2')">
-                                    <?php include_once("template/tem_mobile_country_list.php") ?>
+                                    <?php include_once("templates/_mobile_country_list.php") ?>
                                 </select>
                             </div>
                         </div>
@@ -124,7 +124,7 @@ $jsobj = "var elem_obj = { \n".$jsobj2."\n};";
                         <div class="line1"></div>
 
                         <div class="secondary_info_container">
-                            <?php include_once("template/tem_mobile_myinfo_contactelements.php") ?>
+                            <?php include_once("templates/_mobile_myinfo_contactelements.php") ?>
                         </div>
 
                         <div id="changestatus2" class="changestatus"></div>
@@ -136,6 +136,6 @@ $jsobj = "var elem_obj = { \n".$jsobj2."\n};";
                 </div>
             </div>
         </div>
-        <?php include_once("template/tem_mobile_loggedout_footer.php"); ?>
+        <?php include_once("templates/_mobile_loggedout_footer.php"); ?>
     </body>
 </html>

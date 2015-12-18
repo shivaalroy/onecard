@@ -6,7 +6,7 @@
         <meta name="viewport" charset="UTF-8" content="width=device-width, user-scalable=no">
         <title>Welcome to OneCard</title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="img/mobile/style/style.css">
+        <link rel="stylesheet" href="img/mobile/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/js/main.js"></script>
         <script src="/js/ajax.js"></script>

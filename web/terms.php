@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <title>Terms of Use</title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/style/style.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/js/main.js"></script>
     </head>
     <body>
-        <?php include_once("template/tem_loggedout_menubar_wloginbtn.php"); ?>
+        <?php include_once("templates/_loggedout_menubar_wloginbtn.php"); ?>
         <div class="body_background">
             <div id="pageMiddle_centered" class="pageMiddle_centered">
                 <div class="msg_box white_box">
@@ -20,6 +20,6 @@
                 </div>
             </div>
         </div>
-        <?php include_once("template/tem_loggedout_footer.php"); ?>
+        <?php include_once("templates/_loggedout_footer.php"); ?>
     </body>
 </html>

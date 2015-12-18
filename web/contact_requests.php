@@ -6,7 +6,7 @@ if($profile_ok != true){
     header("location: ".$url);
     exit();
 }
-include_once("template/tem_contact_list.php");
+include_once("templates/_contact_list.php");
 
 $sql = "SELECT firstname FROM table_userinfo WHERE id='$log_id' AND activated='1' LIMIT 1";
 $query = mysqli_query($db_conx, $sql);
@@ -168,7 +168,7 @@ if($numrows < 1){
         <meta charset="UTF-8">
         <title>Contact Requests</title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/style/style.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/js/main.js"></script>
         <script src="/js/ajax.js"></script>
@@ -176,10 +176,10 @@ if($numrows < 1){
         <script src="/js/contact_requests.js"></script>
     </head>
     <body>
-        <?php include_once("template/tem_loggedin_menubar.php"); ?>
+        <?php include_once("templates/_loggedin_menubar.php"); ?>
         <div class="body_background">
             <div id="pageMiddle" class="pageMiddle">
-                <?php include_once("template/tem_contactsbox.php"); ?>
+                <?php include_once("templates/_contactsbox.php"); ?>
                 <div id="contact_request_box" class="contact_request_box white_box">
                     <div class="requests_header">
                         <h2>New Contact Requests</h2>
@@ -202,6 +202,6 @@ if ($old_contact_requests == "none") {
                 </div>
             </div>
         </div>
-        <?php include_once("template/tem_loggedout_footer.php"); ?>
+        <?php include_once("templates/_loggedout_footer.php"); ?>
     </body>
 </html>

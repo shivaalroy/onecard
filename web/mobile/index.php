@@ -3,10 +3,10 @@ include_once("../php_includes/home.php");
 include_once("../php_includes/check_login_status.php");
 // If user is already logged in, header them away
 if($profile_ok != true){
-    require_once("template/tem_mobile_welcomepage.php");
+    require_once("templates/_mobile_welcome.php");
     exit();
 }
-include_once("template/tem_mobile_contact_list.php");
+include_once("templates/_mobile_contact_list.php");
 
 $sql = "SELECT * FROM table_userinfo WHERE id='$log_id' AND activated='1' LIMIT 1";
 $query = mysqli_query($db_conx, $sql);
@@ -157,7 +157,7 @@ function pvn($var) {
         <meta name="viewport" charset="UTF-8" content="width=device-width, user-scalable=no">
         <title><?php if ($profile == "") {echo "OneCard";} else {echo $fn." ".$ln;} ?></title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="img/mobile/style/style.css">
+        <link rel="stylesheet" href="img/mobile/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/js/main.js"></script>
         <script src="/js/ajax.js"></script>
@@ -171,7 +171,7 @@ function pvn($var) {
         </script>
     </head>
     <body>
-        <?php include_once("template/tem_mobile_loggedin_menubar.php"); ?>
+        <?php include_once("templates/_mobile_loggedin_menubar.php"); ?>
         <div class="body_background">
             <div id="pageMiddle_centered" class="pageMiddle_centered">
                 <div id="contact_view" class="contact_view main_box white_box">
@@ -180,7 +180,7 @@ function pvn($var) {
                 </div>
             </div>
         </div>";
-    include_once("template/tem_mobile_loggedout_footer.php");
+    include_once("templates/_mobile_loggedout_footer.php");
     echo "
     </body>
 </html>";
@@ -190,11 +190,11 @@ function pvn($var) {
                     <div id="contact_name" class="contact_name"><?php echo $fn." ".$ln; ?></div>
                     <div id='sharee_summary' class='summary'>
                         <h3>Contact Info Shared With You</h3>
-                        <?php include_once("../template/tem_mobile_profile_shareeelements.php"); ?>
+                        <?php include_once("../templates/_mobile_profile_shareeelements.php"); ?>
                     </div>
                     <div id='sharer_summary' class='summary'>
                         <h3>Contact Information Shared</h3>
-                        <?php include_once("../template/tem_mobile_profile_sharerelements.php"); ?>
+                        <?php include_once("../templates/_mobile_profile_sharerelements.php"); ?>
                         <div id="changestatus" class="changestatus"></div>
                         <div class="option_btns">
                             <button id="share_btn" class="share_btn sharer_elems_btn" onclick="share_info()">Share Info</button>
@@ -205,7 +205,7 @@ function pvn($var) {
                 </div>
             </div>
         </div>
-        <?php include_once("template/tem_mobile_mobile_loggedout_footer.php"); ?>
+        <?php include_once("templates/_mobile_mobile_loggedout_footer.php"); ?>
     </body>
 </html>
 ?>

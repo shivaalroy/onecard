@@ -6,7 +6,7 @@ if($profile_ok != true){
     header("location: ".$url);
     exit();
 }
-include_once("template/tem_contact_list.php");
+include_once("templates/_contact_list.php");
 include_once("php_includes/get_timezone.php");
 
 $sql = "SELECT firstname FROM table_userinfo WHERE id='$log_id' AND activated='1' LIMIT 1";
@@ -121,17 +121,17 @@ $query = mysqli_query($db_conx, $sql);
         <meta charset="UTF-8">
         <title>Notifications</title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/style/style.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/js/main.js"></script>
         <script src="/js/ajax.js"></script>
         <script src="/js/loggedin.js"></script>
     </head>
     <body>
-        <?php include_once("template/tem_loggedin_menubar.php"); ?>
+        <?php include_once("templates/_loggedin_menubar.php"); ?>
         <div class="body_background">
             <div id="pageMiddle" class="pageMiddle">
-                <?php include_once("template/tem_contactsbox.php"); ?>
+                <?php include_once("templates/_contactsbox.php"); ?>
                 <div id="notes_box" class="notes_box white_box">
                     <div id="notes_header" class="notes_header">
                         <h2>Notifications</h2>
@@ -143,6 +143,6 @@ $query = mysqli_query($db_conx, $sql);
                 <div style="clear:left;"></div>
             </div>
         </div>
-        <?php include_once("template/tem_loggedout_footer.php"); ?>
+        <?php include_once("templates/_loggedout_footer.php"); ?>
     </body>
 </html>

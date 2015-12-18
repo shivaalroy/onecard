@@ -14,7 +14,7 @@ if($profile_ok == true){
         <meta charset="UTF-8">
         <title>Sign Up</title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/style/style.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600">
         <script src="/js/main.js"></script>
@@ -22,16 +22,16 @@ if($profile_ok == true){
         <script src="/js/signup.js"></script>
     </head>
     <body>
-        <?php include_once("template/tem_loggedout_menubar_wloginbtn.php"); ?>
+        <?php include_once("templates/_loggedout_menubar_wloginbtn.php"); ?>
         <div class="flat_ui_bg">
             <div id="pageMiddle_centered" class="pageMiddle_centered">
                 <div id="register_centerbox" class="register_centerbox">
                     <h2 class="welcomeTitle" id="welcomeTitle">Sign Up</h2>
                     <h3 class="welcomeDescr" id="welcomeDescr">It's free.</h3>
-                    <?php include_once("template/tem_signupform.php"); ?>
+                    <?php include_once("templates/_signupform.php"); ?>
                 </div>
             </div>
         </div>
-        <?php include_once("template/tem_loggedout_footer.php"); ?>
+        <?php include_once("templates/_loggedout_footer.php"); ?>
     </body>
 </html>

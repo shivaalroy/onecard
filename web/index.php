@@ -3,7 +3,7 @@ include_once("php_includes/home.php");
 include_once("php_includes/check_login_status.php");
 // If user is already logged in, header them away
 if($profile_ok != true){
-    require_once("template/tem_welcomepage.php");
+    require_once("templates/_welcome.php");
     exit();
 }
 include_once("php_includes/contact_list.php");
@@ -258,7 +258,7 @@ if(isset($_POST["fnq"])){
         <meta charset="UTF-8">
         <title><?php if ($profile == "") {echo "OneCard";} else {echo $fn." ".$ln;} ?></title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/style/style.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600">
         <script src="/js/main.js"></script>
@@ -273,17 +273,17 @@ if(isset($_POST["fnq"])){
         </script>
     </head>
     <body>
-        <?php include_once("template/tem_loggedin_menubar.php"); ?>
+        <?php include_once("templates/_loggedin_menubar.php"); ?>
         <div class="body_background">
             <div id="pageMiddle" class="pageMiddle">
-                <?php include_once("template/tem_contactsbox.php"); ?>
+                <?php include_once("templates/_contactsbox.php"); ?>
                 <div id="contact_view" class="contact_view white_box">
                     <?php if($profile == "") {
     echo "<div id=\"cv_title\" class=\"cv_title\">Select a contact from the list.</div>
                 </div>
             </div>
         </div>";
-    include_once("template/tem_loggedout_footer.php");
+    include_once("templates/_loggedout_footer.php");
     echo "
     </body>
 </html>";
@@ -293,11 +293,11 @@ if(isset($_POST["fnq"])){
                     <div id="contact_name" class="contact_name"><?php echo $fn." ".$ln; ?></div>
                     <div id='sharee_summary' class='summary'>
                         <h3>Contact Info Shared With You</h3>
-                        <?php include_once("template/tem_profile_shareeelements.php"); ?>
+                        <?php include_once("templates/_profile_shareeelements.php"); ?>
                     </div>
                     <div id='sharer_summary' class='summary'>
                         <h3>Contact Information Shared</h3>
-                        <?php include_once("template/tem_profile_sharerelements.php"); ?>
+                        <?php include_once("templates/_profile_sharerelements.php"); ?>
                         <div id="changestatus" class="changestatus"></div>
                         <div class="option_btns">
                             <button id="share_btn" class="share_btn sharer_elems_btn" onclick="share_info()">Share Info</button>
@@ -312,6 +312,6 @@ if(isset($_POST["fnq"])){
                 </div>
             </div>
         </div>
-        <?php include_once("template/tem_loggedout_footer.php"); ?>
+        <?php include_once("templates/_loggedout_footer.php"); ?>
     </body>
 </html>

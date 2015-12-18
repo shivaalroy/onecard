@@ -58,7 +58,7 @@ INCLUDE ONCE CODE HERE
         <meta name="viewport" charset="UTF-8" content="width=device-width, user-scalable=no">
         <title>Settings &amp; Preferences</title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="img/mobile/style/style.css">
+        <link rel="stylesheet" href="img/mobile/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/js/main.js"></script>
         <script src="/js/ajax.js"></script>
@@ -69,7 +69,7 @@ INCLUDE ONCE CODE HERE
         </script>
     </head>
     <body>
-        <?php include_once("template/tem_mobile_loggedin_menubar.php"); ?>
+        <?php include_once("templates/_mobile_loggedin_menubar.php"); ?>
         <div class="body_background" style="height: auto;">
             <div id="pageMiddle_centered" class="pageMiddle_centered">
                 <form id="settingsform" class="settingsform main_box white_box" onsubmit="return false;">
@@ -174,6 +174,6 @@ INCLUDE ONCE CODE HERE
                 </form>
             </div>
         </div>
-        <?php include_once("template/tem_mobile_loggedout_footer.php"); ?>
+        <?php include_once("templates/_mobile_loggedout_footer.php"); ?>
     </body>
 </html>

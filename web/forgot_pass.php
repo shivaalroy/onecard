@@ -85,7 +85,7 @@ if(isset($_GET['id']) && isset($_GET['p'])){
         <meta charset="UTF-8">
         <title>Forgot Password</title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/style/style.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/js/main.js"></script>
         <script src="/js/ajax.js"></script>
@@ -118,7 +118,7 @@ if(isset($_GET['id']) && isset($_GET['p'])){
         </script>
     </head>
     <body>
-        <?php include_once("template/tem_loggedout_menubar_wloginbtn.php"); ?>
+        <?php include_once("templates/_loggedout_menubar_wloginbtn.php"); ?>
         <div class="body_background">
             <div id="pageMiddle_centered" class="pageMiddle_centered">
                 <h3>Generate a temporary log in password</h3>
@@ -131,6 +131,6 @@ if(isset($_GET['id']) && isset($_GET['p'])){
                 </form>
             </div>
         </div>
-        <?php include_once("template/tem_loggedout_footer.php"); ?>
+        <?php include_once("templates/_loggedout_footer.php"); ?>
     </body>
 </html>

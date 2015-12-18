@@ -25,18 +25,18 @@ if(isset($_GET["login_attempt"])){
         <meta name="viewport" charset="UTF-8" content="width=device-width, user-scalable=no">
         <title>Log In</title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="img/mobile/style/style.css">
+        <link rel="stylesheet" href="img/mobile/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/js/main.js"></script>
         <script src="/js/ajax.js"></script>
     </head>
     <body>
-        <?php include_once("template/tem_mobile_loggedout_menubar.php"); ?>
+        <?php include_once("templates/_mobile_loggedout_menubar.php"); ?>
         <div class="body_background">
             <div id="pageMiddle_centered" class="no_width_padding main_box pageMiddle_centered">
-                <?php include_once("template/tem_mobile_loginform.php"); ?>
+                <?php include_once("templates/_mobile_loginform.php"); ?>
             </div>
         </div>
-        <?php include_once("template/tem_mobile_loggedout_footer.php"); ?>
+        <?php include_once("templates/_mobile_loggedout_footer.php"); ?>
     </body>
 </html>

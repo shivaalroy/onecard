@@ -2,13 +2,13 @@
 include_once("../php_includes/home.php");
 include_once("../php_includes/check_login_status.php");
 if ($profile_ok == true) {
-    $headerBar = "template/tem_mobile_loggedin_menubar.php";
+    $headerBar = "templates/_mobile_loggedin_menubar.php";
     $sql = "SELECT firstname FROM table_userinfo WHERE id='$log_id' AND activated='1' LIMIT 1";
     $query = mysqli_query($db_conx, $sql);
     $row = mysqli_fetch_row($query);
     $log_firstname = $row[0];
 } else {
-    $headerBar = "template/tem_mobile_loggedout_menubar.php";
+    $headerBar = "templates/_mobile_loggedout_menubar.php";
 }
 ?>
 <!DOCTYPE html>
@@ -17,7 +17,7 @@ if ($profile_ok == true) {
         <meta name="viewport" charset="UTF-8" content="width=device-width, user-scalable=no">
         <title>Not Found</title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="img/mobile/style/style.css">
+        <link rel="stylesheet" href="img/mobile/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/js/main.js"></script>
     </head>
@@ -31,6 +31,6 @@ if ($profile_ok == true) {
                 </div>
             </div>
         </div>
-        <?php include_once("template/tem_mobile_loggedout_footer.php"); ?>
+        <?php include_once("templates/_mobile_loggedout_footer.php"); ?>
     </body>
 </html>

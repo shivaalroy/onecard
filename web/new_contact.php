@@ -52,7 +52,7 @@ INCLUDE_ONCE CODE HERE
         <meta charset="UTF-8">
         <title>New Contact</title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/style/style.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/js/main.js"></script>
         <script src="/js/ajax.js"></script>
@@ -63,7 +63,7 @@ INCLUDE_ONCE CODE HERE
         </script>
     </head>
     <body>
-        <?php include_once("template/tem_loggedin_menubar.php"); ?>
+        <?php include_once("templates/_loggedin_menubar.php"); ?>
         <div class="body_background" style="height: auto;">
             <div id="pageMiddle_centered" class="pageMiddle_centered">
                 <form id="newconform" class="newconform white_box" onsubmit="return false;">
@@ -90,7 +90,7 @@ INCLUDE_ONCE CODE HERE
 
                     <div class="line1"></div>
 
-                    <?php include_once("template/tem_new_contact_contactelements.php") ?>
+                    <?php include_once("templates/_new_contact_contactelements.php") ?>
 
                     <div id="changestatus2" class="changestatus"></div>
                     <div id="option_btns2" class="option_btns">
@@ -100,6 +100,6 @@ INCLUDE_ONCE CODE HERE
                 </form>
             </div>
         </div>
-        <?php include_once("template/tem_loggedout_footer.php"); ?>
+        <?php include_once("templates/_loggedout_footer.php"); ?>
     </body>
 </html>

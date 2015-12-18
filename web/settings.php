@@ -58,7 +58,7 @@ INCLUDE ONCE CODE HERE
         <meta charset="UTF-8">
         <title>Settings &amp; Preferences</title>
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="/style/style.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/js/main.js"></script>
         <script src="/js/ajax.js"></script>
@@ -69,7 +69,7 @@ INCLUDE ONCE CODE HERE
         </script>
     </head>
     <body>
-        <?php include_once("template/tem_loggedin_menubar.php"); ?>
+        <?php include_once("templates/_loggedin_menubar.php"); ?>
         <div class="body_background" style="height: auto;">
             <div id="pageMiddle_centered" class="pageMiddle_centered">
                 <form id="settingsform" class="settingsform white_box" onsubmit="return false;">
@@ -174,6 +174,6 @@ INCLUDE ONCE CODE HERE
                 </form>
             </div>
         </div>
-        <?php include_once("template/tem_loggedout_footer.php"); ?>
+        <?php include_once("templates/_loggedout_footer.php"); ?>
     </body>
 </html>
