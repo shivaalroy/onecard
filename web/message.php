@@ -36,7 +36,7 @@ if($msg == "activation_failure"){
         <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,600">
-        <script src="/js/main.js"></script>
+        <script src="/javascripts/main.js"></script>
     </head>
     <body>
         <?php include_once($headerBar); ?>

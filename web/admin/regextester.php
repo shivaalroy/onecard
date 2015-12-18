@@ -15,8 +15,8 @@
 
         </style>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="/js/main.js"></script>
-        <script src="/js/regex.js"></script>
+        <script src="/javascripts/main.js"></script>
+        <script src="/javascripts/regex.js"></script>
     </head>
     <body>
         <div id="pageMiddle_centered" class="pageMiddle_centered body_background">

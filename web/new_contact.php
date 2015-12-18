@@ -54,10 +54,10 @@ INCLUDE_ONCE CODE HERE
         <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="/stylesheets/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="/js/main.js"></script>
-        <script src="/js/ajax.js"></script>
-        <script src="/js/loggedin.js"></script>
-        <script src="/js/new_contact.js"></script>
+        <script src="/javascripts/main.js"></script>
+        <script src="/javascripts/ajax.js"></script>
+        <script src="/javascripts/loggedin.js"></script>
+        <script src="/javascripts/new_contact.js"></script>
         <script>
             <?php echo $jsobj; ?>
         </script>
